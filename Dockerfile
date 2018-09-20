@@ -1,10 +1,11 @@
 FROM alpine:3.8
 
-RUN apk add --no-cache \
+RUN apk add --no-cache --update \
   gcc \
   libffi-dev \
   make \
   musl-dev \
+  openssh \
   openssl-dev \
   py-pip \
   python \
