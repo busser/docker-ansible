@@ -8,7 +8,8 @@ RUN apk add --no-cache \
   openssl-dev \
   py-pip \
   python \
-  python-dev
+  python-dev \
+  sshpass
 RUN pip install --no-cache-dir --upgrade \
   pip
 RUN pip install --no-cache-dir \
