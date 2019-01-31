@@ -27,8 +27,8 @@ docker run \
   --interactive \
   --tty \
   --volume $PWD/inventory:/etc/ansible/hosts:ro \
-  --volume $PWD/playbook.yaml:/ansible/playbooks/playbook.yaml:ro \
-  --volume $PWD/roles:/ansible/playbooks/roles:ro \
+  --volume $PWD/playbooks:/ansible/playbooks:ro \
+  --volume $PWD/roles:/ansible/roles:ro \
   busser/ansible-playbook \
     --user arthur \
     --ask-pass \
