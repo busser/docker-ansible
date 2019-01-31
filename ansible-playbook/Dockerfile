@@ -23,3 +23,4 @@ ENV ANSIBLE_RETRY_FILES_ENABLED false
 ENV ANSIBLE_ROLES_PATH /ansible/roles
 
 ENTRYPOINT ["ansible-playbook"]
+CMD ["--help"]
