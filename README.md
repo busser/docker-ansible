@@ -8,7 +8,7 @@ Docker images for running Ansible.
 
 ```bash
 docker run \
-  --rm
+  --rm \
   --interactive \
   --tty \
   --volume $PWD/inventory:/etc/ansible/hosts:ro \
