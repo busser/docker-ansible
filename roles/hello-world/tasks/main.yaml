@@ -1,5 +1,0 @@
----
-- name: Write "Hello, World!" to a temporary file.
-  copy:
-    content: Hello, World!
-    dest: /tmp/hello-world.txt

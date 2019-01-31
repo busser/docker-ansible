@@ -16,8 +16,10 @@ RUN pip install --no-cache-dir --upgrade \
 RUN pip install --no-cache-dir \
   ansible
 
-WORKDIR /ansible/playbooks
+WORKDIR /ansible
 
 ENV ANSIBLE_HOST_KEY_CHECKING false
 ENV ANSIBLE_RETRY_FILES_ENABLED false
-ENV ANSIBLE_ROLES_PATH /ansible/playbooks/roles
+ENV ANSIBLE_ROLES_PATH /ansible/roles
+
+ENTRYPOINT ["ansible-playbook"]
