@@ -12,7 +12,7 @@ RUN apk add --no-cache --update \
   python-dev \
   sshpass
 RUN pip install --no-cache-dir --upgrade \
-  pip
+  pip==18.1
 RUN pip install --no-cache-dir \
   ansible
 
